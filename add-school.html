@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add New School</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="dashboard">
+            <asiide class="sidebar">
+              <div class="sidebar-logo">
+                <div class="logo-circle">SMS</div>
+                <h2>School Management</h2>
+              </div>
+              <nav>
+                <a href="dashboard.html">Dashboard</a>
+                    <a href="schools.html" class="active">Schools</a>
+                    <a href="#">Users</a>
+                    <a href="#">Reports</a>
+                    <a href="#">Settings</a>
+              </nav>
+              <a href="index.html" class="logout">Logout</a>
+            </asiide>
+            <main class="main-content">
+                <header class="topbar">
+                    <div class="page-title">
+                        <h1>Add New School</h1>
+                        <p>Register a new school in the system</p>
+                    </div>
+                    <div class="admin-profile">
+                        <div class="admin-avatar">SA</div>
+                        <div class="admin-info">
+                            <strong>Super Admin</strong>
+                            <span>Administrator</span>
+                        </div>
+                    </div>
+                </header>
+                <section class="dashboard-content">
+                    <div class="section-header">
+                        <div>
+                            <h2>School Information</h2>
+                            <p>Enter the details of the new school</p>
+                        </div>
+                    </div>
+                    <div class="school-form-container">
+                        <form id="schoolForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="schoolName">School Name</label>
+                                    <input type="text" id="schoolName" placeholder="Enter school name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="schoolCode">School Code</label>
+                                    <input type="text" id="schoolCode" placeholder="Enter school code" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="location">Location</label>
+                                    <input type="text" id="location" placeholder="Enter school location" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" placeholder="Enter phone number" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="schoolEmail">School Email</label> 
+                                <input type="email" id="schoolEmail" placeholder="Enter school email" required>
+                            </div>
+                            <h3 class="form-section-title">School Administrator</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    
+                                        <label for="adminName">Administrator Name</label>
+                                        <input type="text" id="adminName" placeholder="Enter administrator name" required>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label for="adminEmail">Administrator Email</label>
+                                    <input type="email" id="adminEmail" placeholder="Enter administrator email" required>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <a href="schools.html" class="cancel-btn">Cancel</a>
+                                <button type="submit" class="save-school-btn">Save school</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

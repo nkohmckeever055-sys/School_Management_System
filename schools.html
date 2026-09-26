@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Schools - Super Admin</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="dashboard">
+            <aside class="sidebar">
+                <div class="sidebar-logo">
+                    <div class="logo-circle">SMS</div>
+                    <h2>School Management</h2>
+                </div>
+                <nav>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="schools.html" class="active">Schools</a>
+                    <a href="#">Users</a>
+                    <a href="#">Reports</a>
+                    <a href="#">Settings</a>
+                </nav>
+                <a href="index.html" class="logout">Logout</a>
+            </aside>
+            <main class="main-content">
+                <header class="topbar">
+                    <div class="page-title">
+                        <h1>Schools</h1>
+                        <p>Manage all schools registered in the system</p>
+                    </div>
+                    <div class="admin-profile">
+                    <div class="admin-profile">
+                        <div class="admin-avatar">SA</div>
+                        <div class="admin-info">
+                            <strong>Super Admin</strong>
+                            <span>Administrator</span>
+                        </div>
+                    </div>
+                </header>
+                <section class="dashboard-content">
+                    <div class="section-header">
+                        <div>
+                            <h2>School Management</h2>
+                            <p>view and manage registered schools</p>
+                        </div>
+                        <a href="add-school.html" class="add-school-btn">+ Add New School</a>
+                    </div>
+                    <div class="school-table-container"> 
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>School Name</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="schoolTableBody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div id="schoolList"></div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
